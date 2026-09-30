@@ -1,0 +1,51 @@
+﻿ID,Question,Expected Document,Expected Page,Top5 Documents,Top5 Pages,Document Recall@5 Hit,Exact Evidence Recall@5 Hit
+Q01,What is the course code and title of Emerging AI Technologies?,D1,1,"D5,D1,D5,D1,D1","1,1,2,6,3",Y,Y
+Q02,How many Academic Units and contact hours does PE6201 have?,D1,1,"D1,D5,D1,D2,D2","1,1,10,1,1",Y,Y
+Q03,Which courses list PE6201 as a prerequisite?,D1,1,"D5,D1,D2,D2,D1","1,1,1,1,12",Y,Y
+Q04,What does ILO 1 of PE6201 require students to be able to do?,D1,2,"D1,D1,D1,D1,D1","10,9,8,12,13",Y,N
+Q05,What paired coding activity is planned for Week 2 of PE6201?,D1,6,"D1,D1,D1,D1,D1","10,6,8,6,7",Y,Y
+Q06,What two independent signals are required before a documented non-contributor can receive zero for A2?,D1,11,"D1,D1,D2,D1,D2","11,8,1,10,1",Y,Y
+Q07,When is the PE6201 End-of-Course Project Problem Statement due?,D2,1,"D2,D2,D2,D1,D1","1,1,1,11,11",Y,Y
+Q08,When is A1 Foundations Build due?,D2,1,"D2,D2,D1,D2,D1","1,1,10,1,11",Y,Y
+Q09,When is A2 Applied AI System due?,D2,1,"D1,D1,D1,D1,D1","10,6,8,2,5",N,N
+Q10,What must a student submit for A1 Foundations Build?,D2,1,"D2,D1,D2,D1,D1","1,11,1,11,10",Y,Y
+Q11,What submission time and platform generally apply to PE6201 assessments?,D2,1,"D1,D2,D1,D2,D2","10,1,9,1,1",Y,Y
+Q12,How many Academic Units and contact hours does PE6202 have?,D3,1,"D5,D3,D4,D3,D1","1,1,1,4,1",Y,Y
+Q13,Does PE6202 have any prerequisites?,D3,1,"D4,D5,D3,D1,D5","1,1,1,1,2",Y,Y
+Q14,What is the Week 3 topic in PE6202?,D3,2,"D5,D3,D2,D1,D1","1,4,1,10,8",Y,N
+Q15,What must students build and demonstrate for PE6202 Group Project 1?,D3,3,"D2,D2,D1,D1,D1","1,1,11,10,8",N,N
+Q16,When are the two PE6202 quizzes held and what weeks do they cover?,D3,3,"D5,D3,D4,D2,D1","1,4,2,1,10",Y,N
+Q17,How many Academic Units and contact hours does PE6203 have?,D4,1,"D5,D3,D4,D1,D5","2,1,1,1,1",Y,Y
+Q18,What does ILO 3 of PE6203 require students to be able to do?,D4,2,"D4,D4,D4,D1,D3","3,2,1,10,5",Y,Y
+Q19,In which week of PE6203 is Retrieval-Augmented Generation scheduled?,D4,4,"D5,D3,D3,D1,D1","2,1,4,10,6",N,N
+Q20,How are the two main PE6203 assessment projects weighted and are they team or individual?,D4,5,"D4,D4,D4,D1,D1","3,4,7,10,9",Y,N
+Q21,What are valid reasons for absence in PE6203 and are make-up opportunities provided for in-class activities?,D4,6,"D4,D1,D1,D3,D1","8,13,13,6,10",Y,N
+Q22,Who is listed as the instructor for PE6201 in the MSEAI Trimester 1 Course Synopsis?,D5,1,"D5,D1,D1,D2,D2","1,1,8,1,1",Y,Y
+Q23,Who are the instructors listed for PE6202 in the MSEAI Trimester 1 Course Synopsis?,D5,1,"D5,D4,D3,D3,D5","1,1,1,4,2",Y,Y
+Q24,Who is listed as the instructor for PE6204?,D5,2,"D5,D5,D1,D3,D2","2,1,1,1,1",Y,Y
+Q25,How many contact hours and Academic Units does PE6204 have?,D5,2,"D5,D1,D5,D4,D3","2,1,1,1,1",Y,Y
+Q26,How does NTU Statute 6 define expulsion?,D6,1,"D6,D6,D6,D10,D10","1,2,3,12,16",Y,Y
+Q27,How does NTU Statute 6 define suspension?,D6,1,"D6,D6,D6,D7,D7","1,3,2,3,3",Y,Y
+Q28,Who handles less serious misconduct and who handles serious misconduct under NTU's disciplinary structure?,D6,1,"D6,D6,D3,D4,D7","1,3,6,8,3",Y,Y
+Q29,Under what types of Board of Discipline sanctions does a student have a right of appeal to the Appeal Committee?,D6,2,"D6,D6,D6,D10,D1","2,1,3,16,8",Y,Y
+Q30,Can information about NTU disciplinary proceedings normally be disclosed or shared by students or hearing attendees?,D6,3,"D6,D6,D7,D7,D4","3,1,3,3,8",Y,Y
+Q31,When did NTU's Open Access Policy take effect?,D7,1,"D7,D7,D7,D7,D7","1,2,2,4,3",Y,Y
+Q32,How does the NTU Open Access Policy define open access?,D7,1,"D7,D7,D7,D7,D7","1,2,2,4,3",Y,Y
+Q33,What are the typical embargo periods described in the Open Access Policy?,D7,2,"D7,D7,D7,D7,D7","2,2,1,4,3",Y,Y
+Q34,What three approaches can NTU faculty and staff use to make their publications open access?,D7,2,"D7,D7,D7,D7,D7","1,2,2,3,4",Y,Y
+Q35,What reasons may justify an exemption from depositing the full text of a higher degree thesis in DR-NTU?,D7,3,"D7,D7,D7,D7,D7","3,2,2,1,4",Y,Y
+Q36,Why are anti-plagiarism checks performed on Masters and PhD theses?,D8,1,"D8,D9,D7,D7,D7","1,1,3,2,4",Y,Y
+Q37,Why should a supervisor not judge plagiarism only from the overall TurnItIn matching percentage?,D8,1,"D8,D1,D9,D1,D1","1,8,1,11,10",Y,Y
+Q38,Can duplication between a student's published paper and thesis be acceptable?,D8,1,"D8,D7,D7,D9,D7","1,2,3,1,2",Y,Y
+Q39,How is plagiarism defined in the Academic Integrity document?,D9,1,"D8,D9,D4,D1,D3","1,1,8,13,6",Y,Y
+Q40,Give two examples of plagiarism listed in the Academic Integrity document other than submitting identical work for different courses.,D9,1,"D9,D8,D1,D4,D3","1,1,13,8,6",Y,Y
+Q41,What must students attach when submitting an online or softcopy assignment if a declaration of authorship is required?,D9,1,"D9,D1,D1,D1,D1","1,13,13,11,8",Y,Y
+Q42,Where should the declaration of authorship form be placed for a hardcopy assignment?,D9,1,"D9,D1,D1,D7,D1","1,13,13,4,8",Y,Y
+Q43,How is the NTU academic year structured for graduate programmes?,D10,4,"D10,D10,D10,D10,D10","4,7,5,12,10",Y,Y
+Q44,How recent must course credits or qualifications generally be to be considered for transfer of credits or course exemptions?,D10,12,"D10,D10,D10,D10,D10","12,12,14,15,15",Y,Y
+Q45,What are the general maximum credit transfer or course exemption limits for MbC and MbR programmes?,D10,12,"D10,D10,D10,D10,D10","12,12,13,11,15",Y,Y
+Q46,How long before course registration must students clear outstanding fees?,D10,13,"D10,D10,D10,D10,D10","13,16,2,12,12",Y,Y
+Q47,What notation appears on the transcript if a course is dropped after the Add/Drop period but before the withdrawal deadline?,D10,13,"D10,D10,D10,D10,D10","13,15,14,16,12",Y,Y
+Q48,What is the maximum academic load for a full-time coursework student in a trimester?,D10,13,"D10,D10,D10,D10,D10","13,15,15,4,16",Y,Y
+Q49,What grade point is assigned to a B+ grade in the NTU graduate grading system?,D10,14,"D3,D1,D10,D10,D10","6,11,12,12,14",Y,Y
+Q50,What is the deadline for appealing against academic termination and how many appeals are allowed per candidature?,D10,16,"D10,D6,D10,D10,D6","16,2,15,4,1",Y,Y

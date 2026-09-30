@@ -1,0 +1,21 @@
+﻿Metric,Value,Unit
+Pricing Date,2026-10-01,
+Generation Model,openai/gpt-4.1-mini,
+Embedding Model,openai/text-embedding-3-small,
+GPT Input Price,0.4,USD / 1M tokens
+GPT Output Price,1.6,USD / 1M tokens
+Embedding Price,0.02,USD / 1M tokens
+Formal Test Queries,60,queries
+Formal Test Query Embedding Tokens,883,tokens
+Formal Test LLM Input Tokens,133019,tokens
+Formal Test LLM Output Tokens,3509,tokens
+Total Online API Cost,0.05883966,USD
+Average Online API Cost per Question,0.000980661,USD / question
+Answerable Mean API Cost,0.0010464660000000002,USD / question
+Unanswerable Mean API Cost,0.0006516359999999999,USD / question
+Corpus Chunks,72,chunks
+Corpus Embedding Tokens,26269,tokens
+One-off Corpus Embedding Cost,0.00052538,USD
+Amortisation Query Volume,1000,queries
+Amortised Corpus Cost per Query,5.2538e-07,USD / query
+Average Cost incl. Amortised Corpus,0.00098118638,USD / query

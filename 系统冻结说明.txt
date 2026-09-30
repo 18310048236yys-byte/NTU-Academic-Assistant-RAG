@@ -1,0 +1,52 @@
+NTU Academic Assistant
+System Freeze Record
+
+Freeze Date: 29 September 2026
+
+Corpus:
+D1-D10，共10份NTU文档。
+正式评估期间不新增、删除或修改知识库文件。
+
+RAG Configuration:
+Chunk Size: 500 tokens
+Chunk Overlap: 100 tokens
+Retrieval Top-K: 5
+Abstention Threshold: 0.35
+
+Embedding Model:
+openai/text-embedding-3-small
+
+Generation Model:
+openai/gpt-4.1-mini
+
+Vector Store:
+FAISS
+
+Retrieval:
+Semantic retrieval using FAISS.
+For questions containing an explicit course code such as PE6201,
+PE6202 or PE6203, chunks explicitly referring to that course are
+prioritised before the final Top-5 evidence is selected.
+
+Abstention:
+Two-stage mechanism:
+1. Automatically abstain when Top-1 similarity score < 0.35.
+2. Otherwise, the language model determines whether retrieved
+   evidence directly supports the answer. If evidence is insufficient,
+   the system abstains.
+
+Citation:
+Answers must cite retrieved evidence.
+Simple factual questions should use the minimum number of directly
+supporting sources.
+
+Development Set:
+10 answerable questions
+5 unanswerable questions
+
+Final development result:
+10/10 answerable questions answered.
+5/5 unanswerable questions abstained.
+
+From this point onward, the system configuration will not be tuned
+using the formal evaluation set.

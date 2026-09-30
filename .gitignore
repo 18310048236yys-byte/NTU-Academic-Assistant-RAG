@@ -1,0 +1,21 @@
+# API key
+.env
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Local vector index (can be rebuilt)
+向量库/
+
+# Source documents / course materials
+所需文件/

@@ -1,0 +1,16 @@
+ID,Question,Type,Expected Answer,Expected Source
+DEV01,PE6201的End-of-Course Project占总成绩多少？,answerable,44%,D2
+DEV02,One Academic Unit is equivalent to how many teaching hours?,answerable,13 hours,D10
+DEV03,What is the minimum CGPA for graduation from a coursework programme?,answerable,2.50,D10
+DEV04,PE6202 has a final examination吗？,answerable,No,D3
+DEV05,Who does the NTU Open Access Policy apply to?,answerable,"Faculty, staff and higher-degree research students",D7
+DEV06,Can a student submit identical work for different courses?,answerable,No / academic integrity issue,D9
+DEV07,What is PE6203 about?,answerable,Generative AI and Agentic AI,D4
+DEV08,What sanctions can the Board of Discipline impose?,answerable,"Warning, fine, suspension, expulsion, etc.",D6
+DEV09,How many AUs does MSc Enterprise Artificial Intelligence require?,answerable,30 AU,D10
+DEV10,What percentage is Class Participation in PE6201?,answerable,20%,D2
+DEV11,新加坡明天天气怎么样？,unanswerable,ABSTAIN,
+DEV12,Who is the current Prime Minister of Singapore?,unanswerable,ABSTAIN,
+DEV13,What is the tuition fee for NUS MBA?,unanswerable,ABSTAIN,
+DEV14,What is Bitcoin's price today?,unanswerable,ABSTAIN,
+DEV15,What is my personal NTU GPA?,unanswerable,ABSTAIN,

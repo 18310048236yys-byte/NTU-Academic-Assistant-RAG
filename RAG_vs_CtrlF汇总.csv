@@ -1,0 +1,20 @@
+﻿Metric,Value,Unit
+Compared Questions,50.0,questions
+RAG Mean Time,2.4378,seconds
+RAG Median Time,2.24,seconds
+Ctrl-F Mean Time,60.970200000000006,seconds
+Ctrl-F Median Time,57.285,seconds
+Mean Time Saved,58.532399999999996,seconds
+Median Time Saved,55.44,seconds
+Mean Per-question Saving,92.60524144504303,%
+Overall Mean-Time Saving,96.0016532666778,%
+Mean Per-question Speed-up,26.346734687400875,x
+Mean-time Speed-up,25.010337189269013,x
+Ctrl-F Timeouts,1.0,questions
+Both-correct Paired Questions,43.0,questions
+Paired RAG Mean Time,2.3702325581395347,seconds
+Paired Ctrl-F Mean Time,55.95372093023256,seconds
+Paired Mean Time Saved,53.583488372093015,seconds
+Paired Median Time Saved,53.72,seconds
+Paired Time Saving,95.76394113075175,%
+Paired Speed-up,23.606848508634226,x
