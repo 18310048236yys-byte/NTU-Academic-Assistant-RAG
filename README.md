@@ -635,7 +635,7 @@ Do not commit the `.env` file or API keys to a public repository.
 ## 22. Running the Application
 
 If the FAISS index has already been created, start the Streamlit application using:
-
+For first-time setup, build the FAISS index by following Section 23 before starting the application. Run all commands from the project root directory.
 ```bash
 streamlit run app.py
 ```
@@ -644,26 +644,31 @@ The browser interface will then allow the user to submit questions to the NTU Ac
 
 ---
 
+
 ## 23. Rebuilding the RAG Pipeline
 
-To rebuild the system from the source documents, run the preprocessing and indexing scripts in sequence.
+Run all commands from the project root directory after installing dependencies and configuring `OPENROUTER_API_KEY` in `.env`.
 
-The overall workflow is:
+To build the FAISS index from the provided `分块结果.jsonl` file and start the application:
 
-```text
-1. Read the PDF documents
-2. Extract the text
-3. Create overlapping chunks
-4. Inspect chunk quality
-5. Generate embeddings
-6. Build the FAISS index
-7. Test retrieval
-8. Run the RAG application
+```bash
+python 建立向量库.py
+python -m streamlit run app.py
 ```
 
-The relevant Python scripts are included in the project repository.
+Index building requires internet access and calls the OpenRouter embedding API.
 
----
+To rebuild from the original PDFs, first place the authorised source documents in `所需文件/`, preserving their D1–D10 filename prefixes. Then run:
+
+```bash
+python 读取文档.py
+python 分块文档.py
+python 检查分块质量.py
+python 建立向量库.py
+python -m streamlit run app.py
+```
+
+The original PDFs are required only for rebuilding from source documents. See [Data Documentation](DATA.md) for corpus details.
 
 ## 24. Security
 
