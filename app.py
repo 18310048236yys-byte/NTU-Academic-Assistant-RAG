@@ -1,3 +1,44 @@
+"""
+NTU Academic Assistant - Streamlit User Interface
+
+Purpose:
+    Provides the interactive web interface for the NTU Academic Assistant
+    RAG system. Users can submit natural-language questions and receive
+    evidence-grounded answers with supporting source information.
+
+Main workflow:
+    1. Accept a question from the user through Streamlit.
+    2. Pass the question to the RAG question-answering pipeline.
+    3. Display the generated answer.
+    4. Display supporting document/page citations when available.
+    5. Show an abstention response when the corpus does not contain
+       sufficient evidence.
+    6. Display relevant runtime information such as response time and
+       token usage where available.
+
+Inputs:
+    - Natural-language user question.
+    - Existing FAISS vector index and document metadata.
+    - OpenRouter API credentials loaded from the local environment.
+
+Outputs:
+    - Evidence-grounded answer or abstention message.
+    - Supporting source information.
+    - Retrieval / runtime information shown in the Streamlit interface.
+
+Dependencies:
+    - Streamlit
+    - RAG问答.py
+    - Local FAISS index and metadata
+    - OpenRouter API
+
+Security:
+    API credentials are loaded from the local .env file and must not be
+    hard-coded or committed to the GitHub repository.
+"""
+
+
+
 import os
 import json
 import re

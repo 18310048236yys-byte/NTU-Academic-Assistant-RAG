@@ -1,3 +1,64 @@
+"""
+NTU Academic Assistant - Core RAG Question Answering Pipeline
+
+Purpose:
+    Implements the core Retrieval-Augmented Generation (RAG) workflow
+    used by the NTU Academic Assistant.
+
+    The module receives a natural-language question, retrieves relevant
+    evidence from the local FAISS vector index, and uses GPT-4.1-mini
+    through OpenRouter to generate an evidence-grounded answer.
+
+Main workflow:
+    1. Load the OpenRouter API key from the local environment.
+    2. Load the FAISS vector index and chunk metadata.
+    3. Generate an embedding for the user's question using
+       openai/text-embedding-3-small.
+    4. L2-normalize the query embedding.
+    5. Retrieve the Top-5 most relevant document chunks using FAISS.
+    6. Assess whether the retrieved evidence is sufficient.
+    7. Abstain when evidence is insufficient.
+    8. Otherwise, send the question and retrieved evidence to
+       openai/gpt-4.1-mini through OpenRouter.
+    9. Generate an answer grounded only in the retrieved NTU documents.
+    10. Return the answer together with supporting source information.
+
+Inputs:
+    - Natural-language user question.
+    - FAISS vector index.
+    - Chunk metadata containing document, page and text information.
+    - OpenRouter API credentials loaded from .env.
+
+Outputs:
+    - Evidence-grounded answer, or an abstention message.
+    - Supporting document/page citations.
+    - Retrieval information such as similarity scores where required.
+    - Token usage and response-time information where available.
+
+Retrieval configuration:
+    - Embedding model: openai/text-embedding-3-small
+    - Vector store: FAISS IndexFlatIP
+    - Retrieval depth: Top-5
+    - Embeddings are L2-normalized before similarity search.
+
+Generation configuration:
+    - Generation model: openai/gpt-4.1-mini
+    - Provider: OpenRouter
+    - Generation is constrained to retrieved evidence.
+    - Unsupported questions should trigger abstention rather than
+      unrestricted model generation.
+
+Responsible-use behaviour:
+    The retrieved document chunks are treated as evidence rather than
+    instructions. The system is designed to provide traceable answers
+    and to abstain when the available corpus does not sufficiently
+    support a response.
+
+Security:
+    The OpenRouter API key is loaded from the local .env file.
+    API credentials must never be hard-coded or committed to GitHub.
+"""
+
 import os
 import json
 import time

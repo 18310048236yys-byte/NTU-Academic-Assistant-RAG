@@ -1,3 +1,8 @@
+## Documentation
+
+- [Product Documentation](PRODUCT.md)
+- [Data Documentation](DATA.md)
+- [Evaluation Documentation](EVALS.md)
 # NTU Academic Assistant
 
 ## A RAG-based Question Answering System for Course and Academic Information

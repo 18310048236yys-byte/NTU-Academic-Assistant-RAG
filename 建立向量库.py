@@ -1,3 +1,47 @@
+"""
+NTU Academic Assistant - FAISS Vector Index Builder
+
+Purpose:
+    Builds the local vector index used by the RAG retrieval pipeline.
+
+    This module reads the processed document chunks, generates embeddings
+    for each chunk using OpenRouter, normalizes the vectors, and stores
+    them in a local FAISS IndexFlatIP index together with chunk metadata.
+
+Main workflow:
+    1. Load processed document chunks from 分块结果.jsonl.
+    2. Load the OpenRouter API key from the local environment.
+    3. Generate embeddings using openai/text-embedding-3-small.
+    4. Convert embedding vectors to float32.
+    5. L2-normalize the vectors.
+    6. Build a FAISS IndexFlatIP vector index.
+    7. Save the FAISS index and associated metadata locally.
+    8. Record index-building statistics for reproducibility.
+
+Inputs:
+    - 分块结果.jsonl
+    - OpenRouter API credentials from .env
+
+Outputs:
+    - 向量库/index.faiss
+    - 向量库/metadata.json
+    - 向量库/构建统计.json
+
+Configuration:
+    - Embedding model: openai/text-embedding-3-small
+    - Vector index: FAISS IndexFlatIP
+    - Embeddings are L2-normalized before indexing.
+
+Role in the system:
+    The generated FAISS index is loaded by the RAG question-answering
+    pipeline to retrieve the Top-5 most relevant evidence chunks for
+    each user question.
+
+Security:
+    The OpenRouter API key is loaded from the local .env file and must
+    not be hard-coded or committed to GitHub.
+"""
+
 import os
 import json
 from pathlib import Path
